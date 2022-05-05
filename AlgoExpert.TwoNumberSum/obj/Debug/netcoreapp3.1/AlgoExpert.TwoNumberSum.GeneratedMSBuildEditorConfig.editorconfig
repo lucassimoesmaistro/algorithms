@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = AlgoExpert.TwoNumberSum
+build_property.ProjectDir = C:\_git\algorithms\AlgoExpert.TwoNumberSum\
