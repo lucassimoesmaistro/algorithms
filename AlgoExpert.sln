@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32126.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoExpert", "AlgoExpert.csproj", "{C9A37AE3-C365-4CFC-A52E-126E91119FE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgoExpert.TwoNumberSum", "AlgoExpert.TwoNumberSum\AlgoExpert.TwoNumberSum.csproj", "{99016896-4DD6-4992-9203-D280921C63BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C9A37AE3-C365-4CFC-A52E-126E91119FE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C9A37AE3-C365-4CFC-A52E-126E91119FE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C9A37AE3-C365-4CFC-A52E-126E91119FE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C9A37AE3-C365-4CFC-A52E-126E91119FE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99016896-4DD6-4992-9203-D280921C63BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99016896-4DD6-4992-9203-D280921C63BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99016896-4DD6-4992-9203-D280921C63BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99016896-4DD6-4992-9203-D280921C63BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

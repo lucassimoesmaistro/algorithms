@@ -1,0 +1,14 @@
+C:\_git\algorithms\AlgoExpert.TwoNumberSum\bin\Debug\netcoreapp3.1\AlgoExpert.TwoNumberSum.exe
+C:\_git\algorithms\AlgoExpert.TwoNumberSum\bin\Debug\netcoreapp3.1\AlgoExpert.TwoNumberSum.deps.json
+C:\_git\algorithms\AlgoExpert.TwoNumberSum\bin\Debug\netcoreapp3.1\AlgoExpert.TwoNumberSum.runtimeconfig.json
+C:\_git\algorithms\AlgoExpert.TwoNumberSum\bin\Debug\netcoreapp3.1\AlgoExpert.TwoNumberSum.runtimeconfig.dev.json
+C:\_git\algorithms\AlgoExpert.TwoNumberSum\bin\Debug\netcoreapp3.1\AlgoExpert.TwoNumberSum.dll
+C:\_git\algorithms\AlgoExpert.TwoNumberSum\bin\Debug\netcoreapp3.1\AlgoExpert.TwoNumberSum.pdb
+C:\_git\algorithms\AlgoExpert.TwoNumberSum\obj\Debug\netcoreapp3.1\AlgoExpert.TwoNumberSum.csproj.AssemblyReference.cache
+C:\_git\algorithms\AlgoExpert.TwoNumberSum\obj\Debug\netcoreapp3.1\AlgoExpert.TwoNumberSum.GeneratedMSBuildEditorConfig.editorconfig
+C:\_git\algorithms\AlgoExpert.TwoNumberSum\obj\Debug\netcoreapp3.1\AlgoExpert.TwoNumberSum.AssemblyInfoInputs.cache
+C:\_git\algorithms\AlgoExpert.TwoNumberSum\obj\Debug\netcoreapp3.1\AlgoExpert.TwoNumberSum.AssemblyInfo.cs
+C:\_git\algorithms\AlgoExpert.TwoNumberSum\obj\Debug\netcoreapp3.1\AlgoExpert.TwoNumberSum.csproj.CoreCompileInputs.cache
+C:\_git\algorithms\AlgoExpert.TwoNumberSum\obj\Debug\netcoreapp3.1\AlgoExpert.TwoNumberSum.dll
+C:\_git\algorithms\AlgoExpert.TwoNumberSum\obj\Debug\netcoreapp3.1\AlgoExpert.TwoNumberSum.pdb
+C:\_git\algorithms\AlgoExpert.TwoNumberSum\obj\Debug\netcoreapp3.1\AlgoExpert.TwoNumberSum.genruntimeconfig.cache
