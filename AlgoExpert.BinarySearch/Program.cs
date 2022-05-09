@@ -7,31 +7,28 @@ namespace AlgoExpert.BinarySearch
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            int[] array = new int[4] { 1, 5, 23, 111 };
-            int target = 5;
+            int[] array = new int[10] { 0, 1, 21, 33, 45, 45, 61, 71, 72, 73 };
+            int target = 72;
             int result = BinarySearch(array, target);
             Console.WriteLine(result);
         }
 
         public static int BinarySearch(int[] array, int target)
         {
-            int left = 0;
-            int rigth = array.Length - 1;
-            while (left != rigth)
-            {
-                int middle = (int)((left + rigth) / 2);
-                if (array[middle] == target)
-                {
-                    left = middle;
-                    break;
-                }
-                if (array[middle] > target)
-                    rigth = middle - 1;
-                else
-                    left = middle + 1;
-            }
+            return BinarySearch(array, target, 0, array.Length - 1);
+        }
 
-            return array[left] == target ? left : -1;
+        public static int BinarySearch(int[] array, int target, int left, int right)
+        {
+            if (left > right)
+                return -1;
+            int middle = (int)((left + right) / 2);
+            if (array[middle] == target)
+                return middle;
+            else if (array[middle] > target)
+                return BinarySearch(array, target, left, middle - 1);
+            else
+                return BinarySearch(array, target, middle + 1, right);
         }
     }
 }
