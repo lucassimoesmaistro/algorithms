@@ -12,6 +12,11 @@ namespace AlgoExpert.BinarySearch
             int result = BinarySearch(array, target);
             Console.WriteLine(result);
         }
+        public static void solve(double meal_cost, int tip_percent, int tax_percent)
+        {
+            double result =  (meal_cost + (meal_cost * ((double)(tip_percent)) / 100) + (meal_cost * (((double)(tax_percent)) / 100)));
+            Console.WriteLine(Math.Round((Double)result, 0));
+        }
 
         public static int BinarySearch(int[] array, int target)
         {
