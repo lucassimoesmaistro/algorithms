@@ -7,14 +7,15 @@ namespace AlgoExpert.HeightBalancedBinaryTree
         static void Main(string[] args)
         {
 			BinaryTree root = new BinaryTree(1);
-			root = new Program.BinaryTree(1);
-			root.left = new Program.BinaryTree(2);
-			root.right = new Program.BinaryTree(3);
-			root.left.left = new Program.BinaryTree(4);
-			root.left.right = new Program.BinaryTree(5);
-			root.right.right = new Program.BinaryTree(6);
-			root.left.right.left = new Program.BinaryTree(7);
-			root.left.right.right = new Program.BinaryTree(8);
+			root.left = new BinaryTree(2);
+			root.right = new BinaryTree(3);
+			root.left.left = new BinaryTree(4);
+			root.left.right = new BinaryTree(5);
+			root.right.right = new BinaryTree(6);
+			root.left.right.left = new BinaryTree(7);
+			root.left.right.right = new BinaryTree(8);
+			root.right.right.left  = new BinaryTree(9);
+			root.right.right.right = new BinaryTree(10);
 			bool expected = true;
 			var actual = new Program().HeightBalancedBinaryTree(root);
 			Console.WriteLine(expected == actual ? "Balanced" : "Not Balanced");
@@ -22,19 +23,32 @@ namespace AlgoExpert.HeightBalancedBinaryTree
 		public bool HeightBalancedBinaryTree(BinaryTree tree)
 		{
 			InfoTree infoTree = GetInfoTree(tree);
-			return infoTree.Balanced && infoTree.Height < 2;
+			return infoTree.Balanced;
 		}
 		public InfoTree GetInfoTree(BinaryTree node)
         {
-			if (node.left == null && node.right == null)
-				return new InfoTree { Balanced = true, Height = 0 };
-			var infoTree = new InfoTree { Height = 1 };
+			//check if the node is null
+			if (node == null)
+				return new InfoTree { Balanced = true, Height = -1 };
+
+			//if (node.left == null && node.right == null)
+			//	return new InfoTree { Balanced = true, Height = 0 };
+			//var infoTree = new InfoTree { Height = 1 };
 			var infoLeft = GetInfoTree(node.left);
 			var infoRight = GetInfoTree(node.right);
+			Console.WriteLine("value " + node.value);
+			if (node.left != null)
+				Console.WriteLine("left " + node.left.value);
+			Console.WriteLine("left info" + infoLeft.Height);
+			if (node.right != null)
+				Console.WriteLine("right " + node.right.value);
+			Console.WriteLine("right info" + infoRight.Height);
+			Console.WriteLine("ABS " + Math.Abs(infoLeft.Height - infoRight.Height));
+			Console.WriteLine(infoLeft.Height - infoRight.Height);
 			return new InfoTree
 			{
-				Balanced = infoLeft.Balanced && infoRight.Balanced,
-				Height = infoLeft.Height > infoRight.Height ? infoLeft.Height : infoRight.Height
+				Balanced = infoLeft.Balanced && infoRight.Balanced && Math.Abs(infoLeft.Height - infoRight.Height) <= 1,
+				Height = infoLeft.Height > infoRight.Height ? infoLeft.Height + 1 : infoRight.Height + 1
 			};
 		}
 		public class InfoTree
