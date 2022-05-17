@@ -11,9 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgoExpert.ReverseLinkedLis
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MergeLinkedLists", "MergeLinkedLists\MergeLinkedLists.csproj", "{34B088FF-2AA9-47A5-A795-0EB60BD29673}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoExpert.BinarySearch", "AlgoExpert.BinarySearch\AlgoExpert.BinarySearch.csproj", "{7E580224-E6D6-4B85-9A85-FB4C36BE00EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgoExpert.BinarySearch", "AlgoExpert.BinarySearch\AlgoExpert.BinarySearch.csproj", "{7E580224-E6D6-4B85-9A85-FB4C36BE00EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoExpert.HeightBalancedBinaryTree", "AlgoExpert.HeightBalancedBinaryTree\AlgoExpert.HeightBalancedBinaryTree.csproj", "{77CFD9BA-9C6A-4BE8-A38E-A6780976B8B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgoExpert.HeightBalancedBinaryTree", "AlgoExpert.HeightBalancedBinaryTree\AlgoExpert.HeightBalancedBinaryTree.csproj", "{77CFD9BA-9C6A-4BE8-A38E-A6780976B8B3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgoExpert.InvertBinaryTree", "AlgoExpert.InvertBinaryTree\AlgoExpert.InvertBinaryTree.csproj", "{23894BA8-EEAB-4FE1-A2B7-8948DE22D0D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoExpert.MinHeapConstruction", "AlgoExpert.MinHeapConstruction\AlgoExpert.MinHeapConstruction.csproj", "{CA98E290-7045-4E9B-8A6C-DE53B25415E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{77CFD9BA-9C6A-4BE8-A38E-A6780976B8B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77CFD9BA-9C6A-4BE8-A38E-A6780976B8B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77CFD9BA-9C6A-4BE8-A38E-A6780976B8B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23894BA8-EEAB-4FE1-A2B7-8948DE22D0D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23894BA8-EEAB-4FE1-A2B7-8948DE22D0D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23894BA8-EEAB-4FE1-A2B7-8948DE22D0D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23894BA8-EEAB-4FE1-A2B7-8948DE22D0D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA98E290-7045-4E9B-8A6C-DE53B25415E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA98E290-7045-4E9B-8A6C-DE53B25415E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA98E290-7045-4E9B-8A6C-DE53B25415E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA98E290-7045-4E9B-8A6C-DE53B25415E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
