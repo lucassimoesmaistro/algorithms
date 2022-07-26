@@ -19,11 +19,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgoExpert.InvertBinaryTree
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgoExpert.MinHeapConstruction", "AlgoExpert.MinHeapConstruction\AlgoExpert.MinHeapConstruction.csproj", "{CA98E290-7045-4E9B-8A6C-DE53B25415E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoExpert.SortedSquaredArray", "AlgoExpert.SortedSquaredArray\AlgoExpert.SortedSquaredArray.csproj", "{924C88DD-7621-48C2-9C79-98929B3E10C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgoExpert.SortedSquaredArray", "AlgoExpert.SortedSquaredArray\AlgoExpert.SortedSquaredArray.csproj", "{924C88DD-7621-48C2-9C79-98929B3E10C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoExpert.ArrayOfProducts", "AlgoExpert.ArrayOfProducts\AlgoExpert.ArrayOfProducts.csproj", "{C2D320E5-5901-421A-B8BB-C5F137165CBC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgoExpert.ArrayOfProducts", "AlgoExpert.ArrayOfProducts\AlgoExpert.ArrayOfProducts.csproj", "{C2D320E5-5901-421A-B8BB-C5F137165CBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoExpert.MaxPathSumInBinaryTree", "AlgoExpert.MaxPathSumInBinaryTree\AlgoExpert.MaxPathSumInBinaryTree.csproj", "{CC7917A9-959E-4ACB-87A2-ED44A363C2B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgoExpert.MaxPathSumInBinaryTree", "AlgoExpert.MaxPathSumInBinaryTree\AlgoExpert.MaxPathSumInBinaryTree.csproj", "{CC7917A9-959E-4ACB-87A2-ED44A363C2B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hackerrank.DictionariesAndMaps", "Hackerrank.DictionariesAndMaps\Hackerrank.DictionariesAndMaps.csproj", "{7777D38C-008F-4FA1-9451-70BBCA4AE740}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{CC7917A9-959E-4ACB-87A2-ED44A363C2B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC7917A9-959E-4ACB-87A2-ED44A363C2B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC7917A9-959E-4ACB-87A2-ED44A363C2B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7777D38C-008F-4FA1-9451-70BBCA4AE740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7777D38C-008F-4FA1-9451-70BBCA4AE740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7777D38C-008F-4FA1-9451-70BBCA4AE740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7777D38C-008F-4FA1-9451-70BBCA4AE740}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
