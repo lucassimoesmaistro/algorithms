@@ -27,6 +27,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgoExpert.MaxPathSumInBina
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hackerrank.DictionariesAndMaps", "Hackerrank.DictionariesAndMaps\Hackerrank.DictionariesAndMaps.csproj", "{7777D38C-008F-4FA1-9451-70BBCA4AE740}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoExpert.ValidateSubsequence", "AlgoExpert.ValidateSubsequence\AlgoExpert.ValidateSubsequence.csproj", "{767D8821-26B4-4A4E-87F3-126083EF8F6A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{7777D38C-008F-4FA1-9451-70BBCA4AE740}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7777D38C-008F-4FA1-9451-70BBCA4AE740}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7777D38C-008F-4FA1-9451-70BBCA4AE740}.Release|Any CPU.Build.0 = Release|Any CPU
+		{767D8821-26B4-4A4E-87F3-126083EF8F6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{767D8821-26B4-4A4E-87F3-126083EF8F6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{767D8821-26B4-4A4E-87F3-126083EF8F6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{767D8821-26B4-4A4E-87F3-126083EF8F6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

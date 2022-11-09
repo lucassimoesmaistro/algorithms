@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace Hackerrank.DictionariesAndMaps
 {
@@ -7,41 +8,41 @@ namespace Hackerrank.DictionariesAndMaps
     {
         static void Main(string[] args)
         {
-            int count = Console.Read();
+            Int64 count = Convert.ToInt64(Console.ReadLine());
+            Hashtable phoneBook = new Hashtable();
             if (count >= 0 && count <= 100000)
+                phoneBook = GetNameAndPhone(count);
+            var queryNames = QueryNames(count);
+            foreach (var queryName in queryNames)
             {
-                var phoneBook = GetNameAndPhone(count);
-                var queryNames = QueryNames(count, phoneBook);
-                foreach (var queryName in queryNames)
-                {
-                    if (phoneBook[queryName] != null)
-                        Console.WriteLine($"{queryName}={phoneBook[queryName]}");
-                    else
-                        Console.WriteLine("Not found");
-                }
+                if (phoneBook[queryName] != null)
+                    Console.WriteLine($"{queryName}={phoneBook[queryName]}");
+                else
+                    Console.WriteLine("Not found");
             }
 
             Console.WriteLine("Hello World!");
         }
 
-        private static string[] QueryNames(int count, Hashtable phoneBook)
+        private static List<string> QueryNames(Int64 count)
         {
-            string[] queryNames = new string[count];
-            for (int i = 0; i < count; i++)
-            {
-                queryNames[i] = Console.ReadLine();
-            }
+            string name;
+            List<string> queryNames = new List<string>();
+            while ((name = Console.ReadLine()) != null)
+                queryNames.Add(name);
             return queryNames;
         }
 
-        private static Hashtable GetNameAndPhone(int count)
+        private static Hashtable GetNameAndPhone(Int64 count)
         {
             Hashtable ret = new Hashtable();
-            for(int i = 0; i < count; i++)
+            Int64 i = 0;
+            do
             {
                 string namePhone = Console.ReadLine();
                 ret[namePhone.Split(' ')[0]] = namePhone.Split(' ')[1];
-            }
+                i++;
+            } while (i < count);
             return ret;
         }
     }
