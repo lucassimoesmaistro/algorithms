@@ -7,30 +7,36 @@ namespace AlgoExpert.ValidateSubsequence
     {
         static void Main(string[] args)
         {
-            var retorno1 = IsValidSubsequence(new List<int> { 5, 1, 22, 25, 6, -1, 8, 10 }, new List<int> { 22, 25, 6 });
+            var retorno1 = IsValidSubsequence(new List<int> { 5, 1, 22, 25, 6, -1, 8, 10 }, new List<int> { 5, 1, 22, 23, 6, -1, 8, 10 });
             Console.WriteLine("Hello World!");
 
         }
         public static bool IsValidSubsequence(List<int> array, List<int> sequence)
         {
-            int iSequence = 0;
-
-            foreach (var item in array)
+            int position = 0;
+            bool isSubsequence = false;
+            foreach (var item in sequence)
             {
-                if (item != sequence[iSequence])
+                if (position >= array.Count)
                 {
-                    if (sequence.Contains(item))
-                        return false;
+                    isSubsequence = false;
+                    break;
                 }
-                else
+                for (int i = position; i < array.Count; i++)
                 {
-                    if (sequence.Count.Equals(iSequence + 1))
-                        return true;
-                    else
-                        iSequence++;
+
+                    if (item == array[i])
+                    {
+                        isSubsequence = true;
+                        position = i + 1;
+                        break;
+                    }
+
                 }
+                if (!isSubsequence)
+                    break;
             }
-            return sequence.Count.Equals(iSequence+1);
+            return isSubsequence;
         }
     }
 }
