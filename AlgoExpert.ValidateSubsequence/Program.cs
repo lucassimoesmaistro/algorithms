@@ -14,29 +14,24 @@ namespace AlgoExpert.ValidateSubsequence
         public static bool IsValidSubsequence(List<int> array, List<int> sequence)
         {
             int position = 0;
-            bool isSubsequence = false;
             foreach (var item in sequence)
             {
-                if (position >= array.Count)
-                {
-                    isSubsequence = false;
-                    break;
-                }
+                bool encontrou = false;
                 for (int i = position; i < array.Count; i++)
                 {
 
                     if (item == array[i])
                     {
-                        isSubsequence = true;
+                        encontrou = true;
                         position = i + 1;
                         break;
                     }
 
                 }
-                if (!isSubsequence)
-                    break;
+                if (!encontrou)
+                    return false;
             }
-            return isSubsequence;
+            return true;
         }
     }
 }
